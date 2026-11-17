@@ -23,15 +23,15 @@
     <section class="room-panel">
       <p class="room-number">Room 2 / Engineering bay</p>
       <h2>Repair the control panel</h2>
-      <p>The panel shows three useful commands. Identify the language that styles a webpage, then use its full name to extract one letter.</p>
+      <p>The panel shows three useful commands. One clue tells you how to read the long transmission in the final room.</p>
       <ul class="evidence-list">
-        <li><code>&lt;h1&gt;</code> creates a heading.</li>
-        <li><code>color: blue;</code> changes text color, but is not itself a language.</li>
-        <li><code>function start()</code> creates reusable behavior.</li>
+        <li><code>A=1, B=2, ... Z=26</code></li>
+        <li><code>THAN-ZIE</code> is a code word, not a number.</li>
+        <li>Hyphens inside a word are not separators.</li>
       </ul>
-      <div class="clue"><p>Which language controls appearance? Write its full name, count its words, and take that numbered letter from the word “ALARM.”</p></div>
+      <div class="clue"><p>Use the 26-letter alphabet: A is 1 and Z is 26. The first entry in that alphabet is also the second hint.</p></div>
       <form class="game-form" data-room="engineering" data-answer="a">
-        <div><label for="engineering-answer">Room 2 letter:</label><input id="engineering-answer" type="text" maxlength="1" required></div>
+        <div><label for="engineering-answer">Hint 2 letter:</label><input id="engineering-answer" type="text" maxlength="1" required></div>
         <button type="submit">Repair Panel</button>
         <p class="message" aria-live="polite"></p>
       </form>
