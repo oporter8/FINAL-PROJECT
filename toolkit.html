@@ -23,15 +23,15 @@
     <section class="room-panel">
       <p class="room-number">Room 2 / Engineering bay</p>
       <h2>Repair the control panel</h2>
-      <p>The panel shows three useful commands. Identify the language that styles a webpage, then enter its full name rather than its abbreviation.</p>
+      <p>The panel shows three useful commands. Identify the language that styles a webpage, then use its full name to extract one letter.</p>
       <ul class="evidence-list">
         <li><code>&lt;h1&gt;</code> creates a heading.</li>
         <li><code>color: blue;</code> changes text color, but is not itself a language.</li>
         <li><code>function start()</code> creates reusable behavior.</li>
       </ul>
-      <div class="clue"><p>Which language controls a webpage's appearance: HTML, Cascading Style Sheets, or JavaScript?</p></div>
-      <form class="game-form" data-room="engineering" data-answer="cascading style sheets">
-        <div><label for="engineering-answer">Enter the language:</label><input id="engineering-answer" type="text" required></div>
+      <div class="clue"><p>Which language controls appearance? Write its full name, count its words, and take that numbered letter from the word “ALARM.”</p></div>
+      <form class="game-form" data-room="engineering" data-answer="a">
+        <div><label for="engineering-answer">Room 2 letter:</label><input id="engineering-answer" type="text" maxlength="1" required></div>
         <button type="submit">Repair Panel</button>
         <p class="message" aria-live="polite"></p>
       </form>
