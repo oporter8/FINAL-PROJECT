@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Page setup -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <title>Captain's Briefing</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <!-- Website name -->
-
-    <h1 class="main-page-title">About Us</h1>
+    <h1 class="main-page-title">Captain's Briefing</h1>
     <nav>
-      <!-- Links to all pages -->
-      <a class="nav-link" href="main.html">Home</a>
-      <a class="nav-link" href="toolkit.html">Toolkit</a>
-      <a class="nav-link" href="events.html">Events</a>
-      <a class="nav-link" href="stories.html">Stories</a>
-      <a class="nav-link" href="districts.html">Districts</a>
+      <a class="nav-link" href="main.html">Mission Control</a>
+      <a class="nav-link" href="about.html">Briefing</a>
+      <a class="nav-link" href="toolkit.html">Engineering</a>
+      <a class="nav-link" href="events.html">Timeline</a>
+      <a class="nav-link" href="stories.html">Evidence</a>
+      <a class="nav-link" href="districts.html">Star Map</a>
+      <a class="nav-link" href="game.html">Final Lock</a>
     </nav>
   </header>
-
   <main>
-    <!-- Page heading -->
-    <section>
-      <!-- Heading and introduction -->
-      <h2>Welcome to my About Page</h2>
-      <p>This is a brief introduction to my project and what i learned throughout the semester.</p>
+    <section class="room-panel">
+      <p class="room-number">Room 1 / Captain's quarters</p>
+      <h2>A message in the stars</h2>
+      <p>The captain left a note before disappearing. The first letter of each sentence is important.</p>
+      <div class="clue">
+        <p><strong>S</strong>tars are bright tonight.</p>
+        <p><strong>T</strong>he engines are quiet.</p>
+        <p><strong>A</strong>ll crew members should stay calm.</p>
+        <p><strong>R</strong>eturn the answer to Mission Control.</p>
+      </div>
+      <form class="game-form" data-room="briefing" data-answer="star">
+        <div><label for="briefing-answer">What four-letter word is hidden?</label><input id="briefing-answer" type="text" required></div>
+        <button type="submit">Decode Note</button>
+        <p class="message" aria-live="polite"></p>
+      </form>
+      <a class="button" href="main.html">Back to Mission Control</a>
     </section>
-
-
-    <!-- Values section -->
-    <section>
-      <!-- Value one -->
-   <p>I learned a lot about HTML and CSS, and how to create a website from scratch. I also learned about the importance of planning and organizing content for a website.</p>
-      <!-- Value two -->
-      <p>I also learned about the importance of accessibility and making sure that my website is usable for all users, including those with disabilities. I learned about different accessibility features and how to implement them in my website.</p>
-      <!-- Value three -->
-      <p>Lastly, I learned the importance of testing and debugging my website to ensure it functions correctly and provides a good user experience.</p>
-    </section>
-
-    
   </main>
-
-
+  <footer><p>Room 1 of 6</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>

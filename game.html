@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Lock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="main-page-title">Final Lock</h1>
+    <nav>
+      <a class="nav-link" href="main.html">Mission Control</a>
+      <a class="nav-link" href="about.html">Briefing</a>
+      <a class="nav-link" href="toolkit.html">Engineering</a>
+      <a class="nav-link" href="events.html">Timeline</a>
+      <a class="nav-link" href="stories.html">Evidence</a>
+      <a class="nav-link" href="districts.html">Star Map</a>
+      <a class="nav-link" href="game.html">Final Lock</a>
+    </nav>
+  </header>
+  <main>
+    <section class="room-panel">
+      <p class="room-number">Room 6 / Escape pod</p>
+      <h2>Enter the master command</h2>
+      <p>The escape pod needs the captain's final command. Enter the word that means to get away.</p>
+      <div class="clue"><p>The station is locked, but you can still...</p></div>
+      <form class="game-form" data-room="final-lock" data-answer="escape">
+        <div><label for="final-answer">Six-letter command:</label><input id="final-answer" type="text" required></div>
+        <button type="submit">Open Escape Pod</button>
+        <p class="message" aria-live="polite"></p>
+      </form>
+      <p class="clue">If all six rooms are solved, the station will release you.</p>
+      <a class="button" href="main.html">Back to Mission Control</a>
+    </section>
+    <section class="win-panel">
+      <h2>Mission status</h2>
+      <p>Return to Mission Control after solving the final lock to see your full progress.</p>
+    </section>
+  </main>
+  <footer><p>Room 6 of 6</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

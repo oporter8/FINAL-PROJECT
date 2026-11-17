@@ -1,57 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Page setup -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Districts</title>
+  <title>Star Map</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <!-- Website name or logo -->
-    <h1 class="main-page-title">Hamilton Southeastern Schools</h1>
+    <h1 class="main-page-title">Star Map</h1>
     <nav>
-      <!-- Links to all pages -->
-      <a class="nav-link" href="main.html">Home</a>
-      <a class="nav-link" href="about.html">About</a>
-      <a class="nav-link" href="toolkit.html">Toolkit</a>
-      <a class="nav-link" href="events.html">Events</a>
-      <a class="nav-link" href="stories.html">Stories</a>
+      <a class="nav-link" href="main.html">Mission Control</a>
+      <a class="nav-link" href="about.html">Briefing</a>
+      <a class="nav-link" href="toolkit.html">Engineering</a>
+      <a class="nav-link" href="events.html">Timeline</a>
+      <a class="nav-link" href="stories.html">Evidence</a>
+      <a class="nav-link" href="districts.html">Star Map</a>
+      <a class="nav-link" href="game.html">Final Lock</a>
     </nav>
   </header>
-
   <main>
-    <section>
-      <h2>District Overview</h2>
-      <!-- Heading and introduction -->
-      <p>Welcome to the Districts page! Here you can find information about the Hamilton Southeastern school district.</p>
-    </section>
-    <section>
-      <h2>District Information</h2>
-      <!-- Heading and introduction -->
-      <p>Explore the Hamilton Southeastern school district and learn more about it.</p>
-    </section>
-
-
-
-      <!-- District buttons or links -->
-     <link" href="https://www.hseschools.org">  <a href="https://www.hseschools.org">HSE Schools</a>
-
-    </section>
-
-    <!-- District information -->
-    <section>
-      <!-- Selected district heading -->
-      <h3>Hamilton Southeastern</h3>
-
-      <!-- District description -->
-      <p>Hamilton Southeastern is a school district located in Fishers, Indiana.</p>
-
-      <!-- Additional district details -->
-       <p>For more information about Hamilton Southeastern, visit their website linked above.</p>
+    <section class="room-panel">
+      <p class="room-number">Room 5 / Navigation deck</p>
+      <h2>Plot a safe route home</h2>
+      <p>The navigation computer will accept the name of the planet with liquid water and life.</p>
+      <div class="clue">
+        <p>Choices: Mars, Earth, Venus.</p>
+        <p>Hint: It is the third planet from the Sun.</p>
+      </div>
+      <form class="game-form" data-room="star-map" data-answer="earth">
+        <div><label for="star-map-answer">Destination:</label><select id="star-map-answer"><option value="">Choose a planet</option><option>Mars</option><option>Earth</option><option>Venus</option></select></div>
+        <button type="submit">Plot Route</button>
+        <p class="message" aria-live="polite"></p>
+      </form>
+      <a class="button" href="main.html">Back to Mission Control</a>
     </section>
   </main>
-
+  <footer><p>Room 5 of 6</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>

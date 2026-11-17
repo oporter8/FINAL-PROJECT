@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Page character set -->
   <meta charset="UTF-8">
-  <!-- Mobile settings -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Page title -->
-  <title>Home</title>
-  <!-- CSS file -->
+  <title>Mission Control</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1 class="main-page-title">FINAL PROJECT SITE</h1>
+    <h1 class="main-page-title">The Final Project: Escape</h1>
     <nav>
-      <a class="nav-link" href="main.html">Home</a>
-      <a class="nav-link" href="about.html">About</a>
-      <a class="nav-link" href="toolkit.html">Toolkit</a>
-      <a class="nav-link" href="events.html">Events</a>
-      <a class="nav-link" href="stories.html">Stories</a>
-      <a class="nav-link" href="districts.html">Districts</a>
+      <a class="nav-link" href="main.html">Mission Control</a>
+      <a class="nav-link" href="about.html">Briefing</a>
+      <a class="nav-link" href="toolkit.html">Engineering</a>
+      <a class="nav-link" href="events.html">Timeline</a>
+      <a class="nav-link" href="stories.html">Evidence</a>
+      <a class="nav-link" href="districts.html">Star Map</a>
+      <a class="nav-link" href="game.html">Final Lock</a>
     </nav>
   </header>
 
   <main>
-    <p>Welcome to the Final Project of Semester 1! This webpage is made to showcase the work we learned in this semester.</p>
-    <section>
-      <!-- Main heading -->
-      <h1>Our Mission</h1>
-      <!-- Introduction paragraph -->
-      <p>We are committed to providing a platform for students to share their experiences and connect with others in the community.</p>
-      <!-- Main button or link -->
-      <a href="about.html">Learn More</a>
-    </section>
-
-    <!-- Featured content section -->
-    <section>
-      <!-- Section heading -->
-      <h2>Featured Content</h2>
-      <!-- Cards or links to other pages -->
-      <div class="cards">
-        <a href="stories.html">Read Stories</a>
-        <a href="events.html">View Events</a>
-        <a href="toolkit.html">Access Toolkit</a>
+    <section class="hero">
+      <p class="eyebrow">Emergency transmission received</p>
+      <h2>Escape the Lost Space Station</h2>
+      <p>The station is drifting through deep space. Explore every room, solve its puzzle, and collect the six access codes before the oxygen timer reaches zero.</p>
+      <p id="progress-text">0 of 6 rooms solved</p>
+      <div class="progress" aria-label="Mission progress">
+        <div class="progress-bar" id="progress-bar"></div>
       </div>
+      <button id="reset-game" type="button">Reset Mission</button>
     </section>
 
-    <!-- Additional home page section -->
-     <section>
-      <!-- Supporting information -->
+    <section class="mission-panel">
+      <h2>Choose a Room</h2>
+      <div class="room-grid">
+        <a class="room-card" href="about.html"><p class="room-number">Room 1</p><h3>Captain's Briefing</h3><p>Decode the captain's message.</p></a>
+        <a class="room-card" href="toolkit.html"><p class="room-number">Room 2</p><h3>Engineering Bay</h3><p>Repair the station systems.</p></a>
+        <a class="room-card" href="events.html"><p class="room-number">Room 3</p><h3>Mission Timeline</h3><p>Find the missing launch year.</p></a>
+        <a class="room-card" href="stories.html"><p class="room-number">Room 4</p><h3>Evidence Archive</h3><p>Identify the alien signal.</p></a>
+        <a class="room-card" href="districts.html"><p class="room-number">Room 5</p><h3>Star Map</h3><p>Plot a safe route home.</p></a>
+        <a class="room-card" href="game.html"><p class="room-number">Room 6</p><h3>Final Lock</h3><p>Enter the master command.</p></a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <!-- Copyright or closing information -->
-  </footer>
+  <footer><p>Every clue is on the page. Work together and write down your answers.</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>
