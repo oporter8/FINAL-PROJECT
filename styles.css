@@ -5,37 +5,23 @@
 }
 
 body {
-  background: #070b1f;
+  background: #101522;
   color: #f5f7ff;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   min-height: 100vh;
 }
 
-body::before {
-  background-image: radial-gradient(#ffffff 1px, transparent 1px);
-  background-size: 90px 90px;
-  content: "";
-  inset: 0;
-  opacity: 0.3;
-  pointer-events: none;
-  position: fixed;
-  z-index: -1;
-}
-
 header {
-  background: #11183b;
-  border-bottom: 3px solid #37d6c1;
-  padding: 1rem 2rem;
+  background: #1b2435;
+  padding: 1rem;
 }
 
 .main-page-title {
   color: #37d6c1;
-  font-size: 2rem;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
   text-align: center;
-  text-transform: uppercase;
 }
 
 nav {
@@ -46,54 +32,52 @@ nav {
 }
 
 .nav-link {
-  background: #202a56;
-  border-radius: 4px;
   color: #ffffff;
-  padding: 0.45rem 0.8rem;
+  padding: 0.35rem 0.6rem;
   text-decoration: none;
 }
 
 .nav-link:hover,
 .nav-link:focus-visible {
-  background: #37d6c1;
-  color: #07101f;
+  color: #37d6c1;
 }
 
 main {
   margin: 0 auto;
   max-width: 1050px;
-  padding: 3rem 1.5rem;
+  padding: 2rem 1rem;
 }
 
 h1,
 h2,
 h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .hero,
 .room-panel,
 .mission-panel,
 .win-panel {
-  background: rgba(17, 24, 59, 0.94);
-  border: 1px solid #33447e;
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-  padding: 2rem;
+  background: #1b2435;
+  border: 1px solid #39465f;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
 }
 
 .hero {
-  border-color: #37d6c1;
+  border-top: 3px solid #37d6c1;
   text-align: center;
 }
 
-.hero h2 {
+.hero h2,
+.room-panel h2,
+.win-panel h2,
+.room-card h3 {
   color: #ffcb6b;
-  font-size: 2rem;
 }
 
 .eyebrow,
@@ -101,52 +85,40 @@ p {
   color: #37d6c1;
   font-size: 0.85rem;
   font-weight: bold;
-  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .room-grid {
   display: grid;
-  gap: 1rem;
+  gap: 0.75rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .room-card {
-  background: #202a56;
-  border: 1px solid #41558f;
-  border-radius: 8px;
+  background: #263248;
+  border: 1px solid #465570;
   color: #ffffff;
-  padding: 1.25rem;
+  padding: 1rem;
   text-decoration: none;
 }
 
 .room-card:hover,
 .room-card:focus-visible {
   border-color: #37d6c1;
-  transform: translateY(-3px);
-}
-
-.room-card h3 {
-  color: #ffcb6b;
-}
-
-.room-panel h2,
-.win-panel h2 {
-  color: #ffcb6b;
 }
 
 .clue {
-  background: #0c1230;
-  border-left: 4px solid #ffcb6b;
-  margin: 1rem 0;
-  padding: 1rem;
+  background: #111927;
+  border-left: 3px solid #ffcb6b;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
 }
 
 .game-form {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin: 1rem 0;
+  margin: 0.75rem 0;
 }
 
 label {
@@ -156,8 +128,7 @@ label {
 
 input,
 select {
-  border: 2px solid #5266a0;
-  border-radius: 4px;
+  border: 1px solid #5266a0;
   font-size: 1rem;
   padding: 0.65rem;
 }
@@ -165,8 +136,7 @@ select {
 button,
 .button {
   background: #37d6c1;
-  border: 0;
-  border-radius: 4px;
+  border: none;
   color: #07101f;
   cursor: pointer;
   display: inline-block;
@@ -200,11 +170,10 @@ button:focus-visible,
 }
 
 .progress {
-  background: #0c1230;
-  border: 1px solid #33447e;
-  border-radius: 4px;
+  background: #111927;
+  border: 1px solid #39465f;
   height: 1rem;
-  margin: 1rem 0;
+  margin: 0.75rem 0;
   overflow: hidden;
 }
 
@@ -219,12 +188,11 @@ button:focus-visible,
   display: grid;
   gap: 0.75rem;
   list-style: none;
-  margin: 1rem 0;
+  margin: 0.75rem 0;
 }
 
 .evidence-list li {
-  background: #202a56;
-  border-radius: 6px;
+  background: #263248;
   padding: 0.8rem;
 }
 
@@ -237,16 +205,5 @@ footer {
 @media (max-width: 750px) {
   .room-grid {
     grid-template-columns: 1fr;
-  }
-
-  main {
-    padding: 2rem 1rem;
-  }
-
-  .hero,
-  .room-panel,
-  .mission-panel,
-  .win-panel {
-    padding: 1.25rem;
   }
 }
