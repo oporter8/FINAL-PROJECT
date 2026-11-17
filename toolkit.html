@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toolkit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="main-page-title">Toolkit</h1>
+    <nav>
+      <!-- Links to all pages -->
+      <a class="nav-link" href="main.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="events.html">Events</a>
+      <a class="nav-link" href="stories.html">Stories</a>
+      <a class="nav-link" href="districts.html">Districts</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Web Development Toolkit</h2>
+    <section>
+      <p>Use these reference tables to learn the basic structures of HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section>
+      <h2>HTML</h2>
+      <p>HTML creates the structure and content of a webpage.</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Structure</th>
+              <th>What it does</th>
+              <th>How to use it</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>&lt;h1&gt;...&lt;/h1&gt;</code></td><td>Creates a main heading.</td><td>Use heading levels from <code>h1</code> through <code>h6</code> to organize sections.</td></tr>
+            <tr><td><code>&lt;p&gt;...&lt;/p&gt;</code></td><td>Creates a paragraph.</td><td>Put regular written content between the opening and closing tags.</td></tr>
+            <tr><td><code>&lt;a href="page.html"&gt;Link&lt;/a&gt;</code></td><td>Creates a link.</td><td>Place the destination in <code>href</code> and the clickable text between the tags.</td></tr>
+            <tr><td><code>&lt;img src="photo.jpg" alt="Description"&gt;</code></td><td>Displays an image.</td><td>Use <code>src</code> for the image path and <code>alt</code> to describe it.</td></tr>
+            <tr><td><code>&lt;ul&gt; &lt;li&gt;Item&lt;/li&gt; &lt;/ul&gt;</code></td><td>Creates an unordered list.</td><td>Wrap each list item in an <code>li</code> tag inside a <code>ul</code>.</td></tr>
+            <tr><td><code>&lt;div&gt;...&lt;/div&gt;</code></td><td>Groups content into a block.</td><td>Use it to create a container that can be styled with CSS.</td></tr>
+            <tr><td><code>&lt;section&gt;...&lt;/section&gt;</code></td><td>Groups related content.</td><td>Use it for meaningful page sections, usually with a heading.</td></tr>
+            <tr><td><code>&lt;button&gt;Click&lt;/button&gt;</code></td><td>Creates a clickable button.</td><td>Use it for actions, such as running JavaScript.</td></tr>
+            <tr><td><code>&lt;input type="text"&gt;</code></td><td>Creates a form input.</td><td>Choose an input type such as <code>text</code>, <code>email</code>, or <code>checkbox</code>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>CSS</h2>
+      <p>CSS controls the appearance and layout of HTML elements.</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Structure</th>
+              <th>What it does</th>
+              <th>How to use it</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>selector { property: value; }</code></td><td>Creates a CSS rule.</td><td>Choose an element, class, or ID, then set its styles inside the braces.</td></tr>
+            <tr><td><code>p { color: red; }</code></td><td>Styles every paragraph.</td><td>Use an element selector when the same style applies to all matching elements.</td></tr>
+            <tr><td><code>.card { padding: 1rem; }</code></td><td>Styles elements with a class.</td><td>Put a period before the class name and add <code>class="card"</code> in HTML.</td></tr>
+            <tr><td><code>#main { ... }</code></td><td>Styles one element by ID.</td><td>Put a hash before the ID name and add <code>id="main"</code> in HTML.</td></tr>
+            <tr><td><code>background-color: blue;</code></td><td>Changes the background color.</td><td>Use a color name, hex code, RGB value, or gradient.</td></tr>
+            <tr><td><code>margin: 1rem;</code></td><td>Adds space outside an element.</td><td>Use margin to separate an element from other elements.</td></tr>
+            <tr><td><code>padding: 1rem;</code></td><td>Adds space inside an element.</td><td>Use padding to create space between content and its border.</td></tr>
+            <tr><td><code>display: flex;</code></td><td>Creates a flexible layout.</td><td>Combine it with <code>gap</code>, <code>justify-content</code>, and <code>align-items</code>.</td></tr>
+            <tr><td><code>@media (max-width: 600px) { ... }</code></td><td>Creates responsive styles.</td><td>Put styles inside it to change the layout on smaller screens.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>JavaScript</h2>
+      <p>JavaScript adds behavior and interaction to a webpage.</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Structure</th>
+              <th>What it does</th>
+              <th>How to use it</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>let name = "Alex";</code></td><td>Stores a value in a variable.</td><td>Use <code>let</code> when the value may change.</td></tr>
+            <tr><td><code>const color = "blue";</code></td><td>Stores a value that should not be reassigned.</td><td>Use <code>const</code> by default for values that stay the same.</td></tr>
+            <tr><td><code>function greet() { ... }</code></td><td>Creates reusable code.</td><td>Call the function by writing its name followed by parentheses.</td></tr>
+            <tr><td><code>if (condition) { ... }</code></td><td>Runs code only when a condition is true.</td><td>Put a comparison or Boolean expression inside the parentheses.</td></tr>
+            <tr><td><code>for (let i = 0; i &lt; 3; i++) { ... }</code></td><td>Repeats code.</td><td>Use a loop when you need to run the same code multiple times.</td></tr>
+            <tr><td><code>document.querySelector(".card")</code></td><td>Finds an HTML element.</td><td>Use a CSS selector inside the parentheses.</td></tr>
+            <tr><td><code>element.textContent = "Hello";</code></td><td>Changes text on the page.</td><td>Store an element in a variable, then update its <code>textContent</code>.</td></tr>
+            <tr><td><code>button.addEventListener("click", function () { ... });</code></td><td>Responds to an event.</td><td>Attach it to an element and put the action inside the function.</td></tr>
+            <tr><td><code>console.log(value);</code></td><td>Prints a value for debugging.</td><td>Check the browser's developer console to see the result.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Copyright or closing information -->
+  </footer>
+</body>
+</html>
